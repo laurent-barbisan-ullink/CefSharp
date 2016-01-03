@@ -139,6 +139,9 @@
       <KeyFile>$(LinkKeyFile)</KeyFile>
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -166,6 +169,9 @@
       <MapExports>false</MapExports>
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -186,6 +192,9 @@
       <TargetMachine>MachineX86</TargetMachine>
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -204,6 +213,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -323,6 +335,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="handlers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

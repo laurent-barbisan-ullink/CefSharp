@@ -36,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DSerfozo.LibclangSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DSerfozo.LibclangSharp.0.1.0\lib\net40\DSerfozo.LibclangSharp.dll</HintPath>
+      <HintPath>..\..\packages\DSerfozo.LibclangSharp.0.1.0\lib\net40\DSerfozo.LibclangSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

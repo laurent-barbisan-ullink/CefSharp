@@ -25,7 +25,7 @@
     <Keyword>ManagedCProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <Import Project="$(SolutionDir)\CefSharp.props" />
+  <Import Project="..\CefSharp.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CharacterSet>Unicode</CharacterSet>
@@ -140,7 +140,7 @@
       <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PreBuildEvent>
-      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+      <Command>..\CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -170,7 +170,7 @@
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
     <PreBuildEvent>
-      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+      <Command>..\CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -193,7 +193,7 @@
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
     <PreBuildEvent>
-      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+      <Command>..\CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -214,7 +214,7 @@
       <KeyFile>$(LinkKeyFile)</KeyFile>
     </Link>
     <PreBuildEvent>
-      <Command>$(SolutionDir)CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
+      <Command>..\CefSharp.Prebuild\bin\CefSharp.Prebuild.exe "$(IncludePath)" "$(SolutionDir)packages\$(CefSdkVer)\CEF" "$(ProjectDir)handlers.txt" "$(ProjectDir)Safe" "$(CefSdkVer)"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
